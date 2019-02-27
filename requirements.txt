@@ -1,7 +1,7 @@
 tensorflow==1.7
 scipy
 scikit-learn
-opencv-python
+opencv
 h5py
 matplotlib
 Pillow

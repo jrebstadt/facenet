@@ -19,14 +19,16 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-
+import os.path, sys
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
 import unittest
 import tempfile
 import numpy as np
 import cv2
 import os
 import shutil
-import download_and_extract  # @UnresolvedImport
+from src import download_and_extract  # @UnresolvedImport
+#import download_and_extract  # @UnresolvedImport
 import subprocess
 
 def memory_usage_psutil():
